@@ -115,7 +115,7 @@ def save_articles_to_csv(articles, filename):
 max_results = 1500
 pmids = fetch_recent_pmids(max_results)
 articles = fetch_article_details_with_efetch(pmids)
-output_path = '/content/drive/My Drive/WeeklyMed/CSV/pubmed_batch_articles.csv'
+output_path = 'pubmed_batch_articles.csv'
 save_articles_to_csv(articles, output_path)
 
 print("Article details have been saved to 'pubmed_batch_articles.csv'.")
